@@ -1,2 +1,2 @@
 # Curriculum vitae
-View at EveliaCoss.github.io/cv.
+View at EveliaCoss.github.io/CV.
