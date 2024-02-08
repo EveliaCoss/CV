@@ -30,7 +30,7 @@ source("cv_printing_functions.r")
 #)
 
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit?usp=sharing",  
+  data_location = "https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit?usp=sharing",  # esto es lo unico que debo de modificas, y permisos de Editor
   pdf_mode = params$pdf_mode
  )
 
@@ -137,11 +137,24 @@ CV %<>% print_section('research_positions')
 ```
 
 
+Other Experience and Professional Memberships {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('memberships')
+```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <br>
 <br>
 <br>
+
+Honors {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('honors')
+```
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
