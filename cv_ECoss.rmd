@@ -149,14 +149,14 @@ CV %<>% print_section('memberships')
 <br>
 <br>
 
-Honors {data-icon=chalkboard-teacher}
+Honors {data-icon=shield-halved}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('honors')
 ```
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Teaching Experience {data-icon=laptop-code}
 --------------------------------------------------------------------------------
 
 ```{r}
