@@ -1,5 +1,5 @@
 # Paquetes necesarios:
-  install.packages("rmarkdown")
+install.packages("rmarkdown")
 # pagedown
 remotes::install_github('rstudio/pagedown')
 # devtools
