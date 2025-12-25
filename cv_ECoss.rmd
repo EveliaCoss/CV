@@ -119,7 +119,6 @@ CV %<>% print_text_block("intro")
 ```
 
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
