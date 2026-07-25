@@ -1,10 +1,12 @@
 # Curriculum vitae
 View at [CV pdf](EveliaCoss_cv.pdf).
 
-Postdoctoral Fellowship at LIIGH-UNAM. I am interested in gene regulation, lncRNAs, autoimmune disease, evolution and bioinformatics.
-Founding member of "VieRnes de Bioinformatica en el LIIGH" (bioinformatics fridays). Member of the JAGUAR Project, R-ladies Morelia, RIABIO, LupusRGMX, CDSB Mexico and ISCB RSG-Mexico. 
+Data & AI Engineer at uDocz. Former Postdoctoral Fellow at LIIGH-UNAM. My research interests include gene regulation, lncRNAs, autoimmune diseases, evolution, and bioinformatics.
+
+Founding member of VieRnes de Bioinformática (Bioinformatics Fridays at LIIGH). Active member of the JAGUAR Project, R-Ladies Morelia, RIABIO, LupusRGMX, CDSB México, and ISCB RSG-México, promoting open science, reproducibility, and inclusive scientific communities.
 
 ///
 
-PostDoc en el LIIGH-UNAM. Estoy interesado en regulación génica, lncRNAs, enfermedades autoinmunes, evolución y bioinformática.
-Miembro fundador de "VieRnes de Bioinformatica en el LIIGH" (viernes de bioinformática). Miembro del Proyecto JAGUAR, R-ladies Morelia, RIABIO, LupusRGMX, CDSB México e ISCB RSG-México. 
+Ingeniera en Datos e Inteligencia Artificial en uDocz. Ex becaria posdoctoral en el LIIGH-UNAM. Mis intereses de investigación incluyen regulación génica, lncRNAs, enfermedades autoinmunes, evolución y bioinformática.
+
+Soy miembro fundadora de VieRnes de Bioinformática (Bioinformatics Fridays en el LIIGH). Participo activamente en el Proyecto JAGUAR, R-Ladies Morelia, RIABIO, LupusRGMX, CDSB México y ISCB RSG-México, promoviendo la ciencia abierta, la reproducibilidad y comunidades científicas inclusivas.
