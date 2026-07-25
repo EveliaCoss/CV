@@ -46,12 +46,14 @@ create_CV_object <-  function(data_location,
     cv$contact_info  <- read_gsheet(sheet_id = "contact_info")
     cv$programming_languages  <- read_gsheet(sheet_id = "programming_languages")
     cv$languages  <- read_gsheet(sheet_id = "languages")
+    cv$soft_skills <- read_gsheet(sheet_id = "soft_skills")
   } else {
     # Want to go old-school with csvs?
     cv$entries_data <- readr::read_csv(paste0(data_location, "entries.csv"), skip = 1)
     cv$skills       <- readr::read_csv(paste0(data_location, "language_skills.csv"), skip = 1)
     cv$text_blocks  <- readr::read_csv(paste0(data_location, "text_blocks.csv"), skip = 1)
     cv$contact_info <- readr::read_csv(paste0(data_location, "contact_info.csv"), skip = 1)
+    cv$soft_skills <- readr::read_csv(paste0(data_location, "soft_skills.csv"), skip = 1)
   }
 
 
@@ -222,12 +224,12 @@ Links {data-icon=link}
 
 
 ")
-
+    
     purrr::walk2(cv$links, 1:n_links, function(link, index) {
       print(glue::glue('{index}. {link}'))
     })
   }
-
+  
   invisible(cv)
 }
 
@@ -237,11 +239,12 @@ Links {data-icon=link}
 print_contact_info <- function(cv){
   glue::glue_data(
     cv$contact_info,
-    "- <i class='fa fa-{icon}'></i> {contact}"
+    "- <i class='fa-{icon_style} fa-{icon}'></i> {contact}"
   ) %>% print()
-
+  
   invisible(cv)
 }
+
 
 
 #' @description Programming Languages
@@ -250,7 +253,7 @@ print_programming_languages <- function(cv){
     cv$programming_languages,
     "<b>Expertise:</b> {expertise} <br><b>Familiarity:</b> {familiarity}"
   ) %>% print()
-
+  
   invisible(cv)
 }
 
@@ -260,6 +263,16 @@ print_languages <- function(cv){
     cv$languages,
     " {language} - {level} <br>"
   ) %>% print()
+  
+  invisible(cv)
+}
 
+#' @description Prints out soft skills
+print_soft_skills <- function(cv){
+  glue::glue_data(
+    cv$soft_skills,
+    " {skill} <br>"
+  ) %>% print()
+  
   invisible(cv)
 }

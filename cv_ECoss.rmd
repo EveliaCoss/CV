@@ -78,7 +78,7 @@ CV %>% print_contact_info()
 <br>
 <br>
 
-Programming Languages {#skills}
+Technical Skills {#tech_skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -94,17 +94,12 @@ Languages {#skills}
 CV %>% print_languages()
 ```
 
-
-
-Disclaimer {#disclaimer}
+Soft skills {#soft_skills}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available at [EveliaCoss/CV](https://github.com/EveliaCoss/CV) and is powered by [nstrayer/cv](https://github.com/nstrayer/cv).
-
-Last updated on `r Sys.Date()`.
-
+```{r}
+CV %>% print_soft_skills()
+```
 
 
 Main
@@ -116,6 +111,14 @@ Evelia Lorena Coss Navarrete {#title}
 ```{r}
 # Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
+CV %<>% print_text_block("teaching_experience_aside") 
+```
+
+Professional experience {data-icon=code}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('professional_experience')
 ```
 
 
@@ -126,21 +129,18 @@ Education {data-icon=graduation-cap data-concise=true}
 CV %<>% print_section('education')
 ```
 
+Professional Affiliations {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
 
+```{r}
+CV %<>% print_section('memberships')
+```
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('research_positions')
-```
-
-
-Other Experience and Professional Memberships {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('memberships')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
@@ -179,7 +179,6 @@ CV %<>% print_section('academic_articles')
 ```
 
 
-
 Talks and Posters {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
@@ -204,7 +203,12 @@ CV %<>% print_section('science_communication')
 ```
 
 
-```{r}
-CV %<>% print_links()
-```
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
 
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+The source code is available at [EveliaCoss/CV](https://github.com/EveliaCoss/CV) 
+and is powered by [nstrayer/cv](https://github.com/nstrayer/cv).
+
+Last updated on `r Sys.Date()`.

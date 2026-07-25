@@ -36,10 +36,10 @@ sup {
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #f7fbff; /* Make sidebar blue */
+  --sidebar-background-color:#deebf7; /* Make sidebar blue, Aqui es el borde derecho */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
-  --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
+  --decorator-border: 2px solid #deebf7; /* Make timeline a blue as well, */ 
 }
 
 .details .place {
@@ -85,7 +85,7 @@ sup {
 
 /* Make little circle outline be a light blue */
 .decorator::after {
-  background-color: #08306b;
+  background-color: #1d91c0; /* Circulos del timeline */
 }
 
 /* Remove the fake bullets from lists */
@@ -126,3 +126,10 @@ sup {
 svg {
   margin-top: -1.25in;
 }
+
+/* Color de los hipervínculos normales */
+a {
+  color: #1d91c0;   /* azul oscuro */
+  text-decoration: none; /* opcional, quita el subrayado */
+}
+
